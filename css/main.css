@@ -1,0 +1,140 @@
+
+body{
+    padding: 10px;
+    background-color: whitesmoke;
+}
+
+h1
+{
+  text-align:center;
+  display:inline;
+}
+
+h2, h3 {
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.6em;
+}
+
+
+/*
+ * -- TASK TABLE WRAPPER --
+ * This element wraps up all the task table elements
+ */
+ .task-tables,
+ .information {
+    max-width: 980px;
+    margin: 0 auto;
+ }
+.task-tables {
+    margin-bottom: 3.125em;
+    text-align: center;
+}
+
+/*
+ * -- TASK TABLE  --
+ * Every task table has the .task-table class
+ */
+.task-table {
+    border: 1px solid #ddd;
+    margin: 0 0.5em 2em;
+    padding: 0 0 3em;
+}
+
+/*
+ * -- TASK TABLE HEADER COLORS --
+ * Choose a different color based on the type of task status.
+ */
+.task-table-due .task-table-header {
+    background:  lightpink !important;
+}
+
+.task-table-done .task-table-header {
+    background: lightgreen !important;
+}
+
+/*
+ * -- TASK TABLE HEADER --
+ * By default, a header is black/white, and has some styles for its <h2> name.
+ */
+.task-table-header {
+    background: #111;
+    color: #fff;
+}
+    .task-table-header h2 {
+        margin: 0;
+        padding-top: 2em;
+        font-size: 1em;
+        font-weight: normal;
+
+    }
+
+/*
+ * -- TASK TABLE LIST --
+ * Each task table has a <ul> which is denoted by the .task-table-list class
+ */
+.task-table-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+/*
+ * -- TASK TABLE LIST ELEMENTS --
+ * Styles for the individual list elements within each task table
+ */
+.task-table-list li {
+    padding: 0.8em 0;
+    background: #f7f7f7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+
+/*
+ * -- TASK TABLE BUTTON --
+ * Styles for the "Choose" button at the bottom of a task table.
+ * This inherits from Pure Button.
+ */
+.button-choose {
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #333;
+    border-radius: 2em;
+    font-weight: bold;
+    position: relative;
+    bottom: -1.5em;
+}
+
+.information-head {
+    color: black;
+    font-weight: 500;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.task-image {
+    width: auto;    
+    max-height: auto;
+    float: center;    
+    padding: 3px;
+}
+
+/*
+ * -- TABLET MEDIA QUERIES --
+ * text and add some vertical space between the various task tables
+ */
+@media(min-width: 767px) {
+    .task-table {
+        margin-bottom: 0;
+    }
+}
