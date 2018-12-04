@@ -20,6 +20,34 @@ p {
     line-height: 1.6em;
 }
 
+.ul-menu {
+    margin: 0;
+    padding: 0;
+    color: white;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.li-menu {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 6px 6px;
+    text-decoration: none;
+    float: center;
+}
+
+button {
+    border-radius: 12px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
 
 /*
  * -- TASK TABLE WRAPPER --

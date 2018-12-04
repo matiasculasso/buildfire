@@ -9,10 +9,12 @@
 </head>
 <body>
     <div>
-       <h1>Tasks List</h1>
-            <button class="pure-button pure-button-primary"
-                onclick="addTask({title:'My New Task!',description:'This is my new task',img:'https://picsum.photos/1600/900?v99'})">Add Task
-            </button>           
+        <ul class="ul-menu"> 
+            <li class="li-menu" ><h2>Tasks Lists</h2></li>
+            <li class="li-menu" ><button class="pure-button pure-button-primary"
+                onclick="addTask({title:'My New Task!',description:'This is my new task',img:'https://picsum.photos/1600/900?v99'})">Add new Task
+            </button></li>            
+       </ul>            
     </div>    
     <div class="l-content">
         <div id="taskContainer" class="task-tables pure-g">           
